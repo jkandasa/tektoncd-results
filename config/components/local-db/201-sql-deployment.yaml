@@ -58,6 +58,8 @@ spec:
           seccompProfile:
             type: RuntimeDefault
           runAsNonRoot: true
+          # uid=999(postgres)
+          runAsUser: 999
           allowPrivilegeEscalation: false
           capabilities:
             drop:
